@@ -26,12 +26,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mb-6 font-mono text-xs uppercase tracking-widest2 text-signal"
+            className="mb-6 font-sans text-xs font-semibold uppercase tracking-widest2 text-signal"
           >
             Depuis 2011 — parce que l&rsquo;homme est pluriel
           </motion.p>
 
-          <h1 className="font-display text-[13vw] font-semibold leading-[0.92] tracking-tight text-bone sm:text-[9vw] lg:text-[4.6vw]">
+          <h1 className="font-display text-[12vw] font-bold leading-[0.92] tracking-tight text-bone sm:text-[8vw] lg:text-[4.5vw]">
             <motion.span
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
-            className="mt-8 max-w-md text-lg leading-relaxed text-bone/70"
+            className="mt-8 max-w-md font-sans text-base sm:text-lg leading-relaxed text-bone/80"
           >
             Un numéro consacré au goût — celui qu&rsquo;on affine, qu&rsquo;on
             transmet, qu&rsquo;on discute à table. Mode, société et culture,
@@ -69,13 +69,13 @@ export default function Hero() {
           >
             <a
               href="#numero"
-              className="group inline-flex items-center gap-3 rounded-full bg-bone px-7 py-4 font-mono text-xs uppercase tracking-widest2 text-ink transition-transform duration-300 hover:scale-105"
+              className="inline-flex items-center gap-3 rounded-full bg-signal px-8 py-4 font-display text-xs font-bold uppercase tracking-wider text-bone border-2 border-signal-soft/60 shadow-[0_10px_25px_-5px_rgba(230,52,98,0.5)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-signal-soft hover:shadow-[0_15px_30px_-5px_rgba(230,52,98,0.7)]"
             >
               Découvrir le numéro
             </a>
             <a
               href="#archives"
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest2 text-bone/70 underline decoration-ink-line underline-offset-8 transition-colors hover:text-bone hover:decoration-signal"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-bone/30 bg-transparent px-7 py-4 font-sans text-xs font-semibold uppercase tracking-wider text-bone transition-all duration-300 hover:-translate-y-1 hover:border-bone hover:bg-bone hover:text-ink hover:shadow-lg"
             >
               Voir les archives
             </a>

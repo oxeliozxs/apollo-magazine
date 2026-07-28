@@ -16,14 +16,14 @@ export default function ArchiveSection() {
           className="mb-4 flex items-end justify-between gap-6"
         >
           <div>
-            <p className="mb-3 font-mono text-xs uppercase tracking-widest2 text-teal">
+            <p className="mb-3 font-sans text-xs font-semibold uppercase tracking-widest2 text-teal">
               Depuis 2011
             </p>
-            <h2 className="font-display text-5xl font-semibold leading-[0.95] text-bone sm:text-6xl md:text-7xl">
+            <h2 className="font-display text-5xl font-bold leading-[0.95] text-bone sm:text-6xl md:text-7xl">
               Les archives
             </h2>
           </div>
-          <p className="hidden max-w-xs text-sm leading-relaxed text-bone/50 md:block">
+          <p className="hidden max-w-xs font-sans text-sm leading-relaxed text-bone/70 md:block">
             Chaque numéro, une couleur, une obsession. Feuilletez quinze ans
             d&rsquo;archives éditoriales.
           </p>

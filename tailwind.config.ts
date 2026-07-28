@@ -30,9 +30,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "serif"],
-        sans: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-mono)", "monospace"],
+        display: ["var(--font-archivo)", "sans-serif"],
+        sans: ["var(--font-poppins)", "sans-serif"],
+        mono: ["var(--font-poppins)", "sans-serif"],
       },
       letterSpacing: {
         widest2: "0.35em",

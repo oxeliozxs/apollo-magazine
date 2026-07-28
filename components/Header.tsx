@@ -27,7 +27,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <a
           href="#top"
-          className="font-display text-xl font-semibold tracking-tight text-bone"
+          className="font-display text-2xl font-bold tracking-tight text-bone transition-colors hover:text-signal"
         >
           Apollo<span className="text-signal">·</span>Magazine
         </a>
@@ -37,15 +37,15 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="group relative font-mono text-xs uppercase tracking-widest2 text-bone/80 transition-colors hover:text-bone"
+              className="group relative font-sans text-xs font-semibold uppercase tracking-wider text-bone/80 transition-colors hover:text-bone"
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 h-px w-0 bg-signal transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-signal transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
           <a
             href="#numero"
-            className="rounded-full bg-signal px-5 py-2 font-mono text-xs uppercase tracking-widest2 text-bone transition-transform duration-300 hover:scale-105 hover:bg-signal-soft"
+            className="rounded-full bg-signal px-6 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-bone border-2 border-signal-soft/60 shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-signal-soft hover:shadow-lg hover:shadow-signal/40"
           >
             Le N°41
           </a>
@@ -76,7 +76,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="py-3 font-display text-2xl text-bone"
+                  className="py-3 font-sans text-xl font-medium text-bone"
                 >
                   {link.label}
                 </a>
@@ -84,7 +84,7 @@ export default function Header() {
               <a
                 href="#numero"
                 onClick={() => setOpen(false)}
-                className="mt-4 w-fit rounded-full bg-signal px-5 py-2 font-mono text-xs uppercase tracking-widest2 text-bone"
+                className="mt-4 w-fit rounded-full bg-signal px-6 py-3 font-display text-xs font-bold uppercase tracking-wider text-bone border-2 border-signal-soft/60 shadow-md"
               >
                 Le N°41
               </a>

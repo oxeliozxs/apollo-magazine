@@ -29,31 +29,30 @@ export default function IssueRow({ issue, index }: IssueRowProps) {
       >
         <div className="flex items-baseline gap-4">
           <span
-            className="font-mono text-xs uppercase tracking-widest2"
+            className="font-sans text-xs font-bold uppercase tracking-widest2"
             style={{ color: accentColor }}
           >
             N° {issue.number}
           </span>
-          <span className="font-mono text-xs uppercase tracking-widest2 text-bone/40">
+          <span className="font-sans text-xs font-medium uppercase tracking-widest2 text-bone/50">
             {issue.season}
           </span>
         </div>
 
-        <h3 className="mt-4 font-display text-5xl font-semibold leading-[0.95] text-bone sm:text-6xl md:text-7xl">
+        <h3 className="mt-4 font-display text-4xl font-bold leading-[0.95] text-bone sm:text-5xl md:text-6xl">
           {issue.title}
         </h3>
 
         <a
           href="#"
-          className="mt-8 inline-flex items-center gap-3 rounded-full border border-ink-line px-6 py-3 font-mono text-xs uppercase tracking-widest2 text-bone/80 transition-all duration-300 hover:gap-4 hover:border-transparent hover:text-ink"
-          style={{
-            backgroundColor: "transparent",
-          }}
+          className="mt-8 inline-flex items-center gap-3 rounded-full border-2 border-bone/30 bg-transparent px-7 py-3.5 font-sans text-xs font-semibold uppercase tracking-wider text-bone transition-all duration-300 hover:gap-4 hover:-translate-y-1 hover:border-transparent hover:text-ink hover:shadow-lg"
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = accentColor;
+            e.currentTarget.style.borderColor = accentColor;
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.backgroundColor = "transparent";
+            e.currentTarget.style.borderColor = "rgba(246, 244, 239, 0.3)";
           }}
         >
           Lire le numéro

@@ -29,7 +29,7 @@ export default function Manifesto() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="max-w-4xl font-display text-4xl font-medium italic leading-tight sm:text-5xl md:text-6xl"
+          className="max-w-4xl font-display text-3xl font-bold italic leading-tight sm:text-4xl md:text-5xl text-ink"
         >
           &laquo; Nous ne cherchons pas à définir l&rsquo;homme, mais à lui
           laisser la place d&rsquo;être plusieurs à la fois. &raquo;
@@ -44,13 +44,13 @@ export default function Manifesto() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
             >
-              <span className="font-mono text-xs uppercase tracking-widest2 text-signal">
+              <span className="font-sans text-xs font-bold uppercase tracking-widest2 text-signal">
                 {pillar.label}
               </span>
-              <h3 className="mt-3 font-display text-2xl font-semibold">
+              <h3 className="mt-3 font-display text-2xl font-bold text-ink">
                 {pillar.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-ink/60">
+              <p className="mt-3 font-sans text-sm sm:text-base leading-relaxed text-ink/75">
                 {pillar.text}
               </p>
             </motion.div>

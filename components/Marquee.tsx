@@ -11,10 +11,10 @@ export default function Marquee({ text }: MarqueeProps) {
         {[...items, ...items].map((item, i) => (
           <span
             key={i}
-            className="flex items-center gap-8 font-display text-2xl italic text-bone/30"
+            className="flex items-center gap-8 font-display text-2xl font-bold uppercase tracking-wider text-bone/40"
           >
             {item}
-            <span className="h-1.5 w-1.5 rounded-full bg-signal" />
+            <span className="h-2 w-2 rounded-full bg-signal" />
           </span>
         ))}
       </div>
