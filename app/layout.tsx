@@ -50,7 +50,9 @@ export const metadata: Metadata = {
       "Le magazine qui explore les mille visages de la masculinité contemporaine.",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/icone apollo.jpg",
+    shortcut: "/icone apollo.jpg",
+    apple: "/icone apollo.jpg",
   },
 };
 

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { navLinks } from "@/lib/data";
 
 export default function Header() {
@@ -27,9 +28,16 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <a
           href="#top"
-          className="font-display text-2xl font-bold tracking-tight text-bone transition-colors hover:text-signal"
+          className="flex items-center transition-opacity hover:opacity-90 shrink-0"
         >
-          Apollo<span className="text-signal">·</span>Magazine
+          <Image
+            src="/Logo_Appolo-Magazine-Wh.png"
+            alt="Apollo Magazine"
+            width={240}
+            height={60}
+            className="h-8 md:h-10 w-auto object-contain"
+            priority
+          />
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">
