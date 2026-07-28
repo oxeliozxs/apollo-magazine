@@ -84,18 +84,16 @@ export default function Hero() {
 
         <motion.div
           id="numero"
-          initial={{ opacity: 0, y: 30, rotate: -4 }}
-          animate={{ opacity: 1, y: 0, rotate: -3 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
           className="order-1 mx-auto w-full max-w-[280px] scroll-mt-28 animate-floaty lg:order-2 lg:max-w-[340px]"
         >
           <CoverArt
             number={latestIssue.number}
             title={latestIssue.title}
-            from={latestIssue.gradientFrom}
-            to={latestIssue.gradientTo}
-            accent={latestIssue.accent}
-            className="w-full rounded-sm shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)] ring-1 ring-white/10"
+            coverImage={latestIssue.coverImage}
+            className="w-full rounded-md shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] ring-1 ring-white/10"
           />
         </motion.div>
       </div>

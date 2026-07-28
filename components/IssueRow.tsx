@@ -66,20 +66,11 @@ export default function IssueRow({ issue, index }: IssueRowProps) {
           reversed ? "md:order-1 md:col-start-1" : ""
         }`}
       >
-        <div
-          className="relative mx-auto max-w-[260px] overflow-hidden rounded-sm shadow-2xl transition-transform duration-500 group-hover:-translate-y-2"
-          style={{
-            clipPath: reversed
-              ? "polygon(0 0, 100% 6%, 100% 100%, 0 94%)"
-              : "polygon(0 6%, 100% 0, 100% 94%, 0 100%)",
-          }}
-        >
+        <div className="relative mx-auto max-w-[260px] overflow-hidden rounded-sm shadow-2xl transition-transform duration-500 group-hover:-translate-y-2">
           <CoverArt
             number={issue.number}
             title={issue.title}
-            from={issue.gradientFrom}
-            to={issue.gradientTo}
-            accent={issue.accent}
+            coverImage={issue.coverImage}
             className="w-full"
           />
         </div>
